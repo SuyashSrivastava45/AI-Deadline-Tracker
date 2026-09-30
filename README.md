@@ -1,42 +1,31 @@
 # 📚 AI Deadline Tracker
 
 An AI-powered academic deadline tracker that extracts important
-deadlines, exams, assignments, projects, and academic milestones
-from uploaded academic documents using Gemini Vision.
+deadlines from academic documents using Google Gemini Vision and
+sends the extracted deadline information through email.
 
-The extracted deadlines are displayed in an organized table and
-can also be sent to a student's email as a professional deadline
-digest.
+## ✨ Features
 
----
-
-## 🚀 Features
-
-- 📷 Upload syllabus, timetable, assignment sheet, or academic document
-- 🤖 Extract academic deadlines using Gemini Vision
-- 📅 Identify assignments, exams, quizzes, projects, readings, and milestones
-- 📊 Display extracted deadlines in an organized table
+- 📷 Upload academic documents
+- 🤖 Extract deadlines using Gemini Vision
+- 📅 Display deadlines in an organized table
 - 📧 Send deadline digest through Gmail
-- ✉️ Enter a different recipient email for each digest
-- 🔐 Keep API keys and Gmail credentials in Streamlit Secrets
-- 📓 Includes Jupyter Notebook used during development and testing
-
----
+- 🔐 Secure API key and email credentials using Streamlit Secrets
+- 📓 Includes Jupyter Notebook for development and testing
 
 ## 🛠️ Technologies Used
 
 - Python
 - Streamlit
 - Google Gemini API
+- Google GenAI SDK
 - Pillow
 - Gmail SMTP
 - Jupyter Notebook
 
----
-
 ## 📁 Project Structure
 
-
+```text
 AI Deadline Tracker/
 │
 ├── app.py
@@ -45,6 +34,11 @@ AI Deadline Tracker/
 ├── requirements.txt
 ├── README.md
 ├── .gitignore
+│
+├── test_images/
+│   ├── test1_syllabus.png
+│   ├── test2_timetable.png
+│   └── test3_no_deadline.png
 │
 └── .streamlit/
     ├── secrets.toml
